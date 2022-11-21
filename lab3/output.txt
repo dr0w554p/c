@@ -1,0 +1,27 @@
+=======MNT Table=====
+[1, ADDS]
+[5, SUBS]
+=======MDT Table=====
+ADDS &A1 &A2
+ ADD AREG #1
+ ADD BREG #2
+ MEND
+SUBS &A3 &A4
+ SUB AREG #3
+ SUB BREG #4
+ MEND
+=======ALP Table=====
+START
+MOVER AREG S1
+MOVER BREG S1
+ADDS Data1 Data2
+SUBS Data2 Data1
+S1 DC 5
+Data1 DC 2
+Data2 DC 3
+END
+=======ALA Table=====
+1 &A1
+2 &A2
+3 &A3
+4 &A4
