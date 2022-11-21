@@ -78,6 +78,7 @@ void F()
         advance();
     }
 }
+
 int main()
 {
     while (1)
